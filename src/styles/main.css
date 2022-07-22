@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
+:root {
+  --background-blue: #1de4e4;
+  --color-white: #fff;
+  --color-black: #000;
+}
 .background {
   height: 100vh;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.671), rgb(29, 228, 228));
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.671), --background-blue);
   color: #fff;
 }
 
@@ -25,10 +30,10 @@
   cursor: pointer;
   background-color: rgb(31, 31, 31);
   border: none;
-  color: #fff;
+  color: var(--color-white);
 }
 .btn:hover {
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 .btnEqual {
@@ -45,7 +50,7 @@
   margin: 8px;
   font-size: 25px;
   text-align: right;
-  background-color: #fff;
+  background-color: var(--color-white);
   border: none;
-  color: black;
+  color: var(--color-black);
 }
