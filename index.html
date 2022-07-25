@@ -12,29 +12,34 @@
 
 <body>
     <div class="background">
+        <ul class="historic">
+            <h1>Histórico:</h1>
+        </ul>
+        <button id="btnClear">Limpar</button>
+
         <div class="calculadora">
             <h1>Calculadora</h1>
             <input id="result" type="text" onclick="inset()">
             <table>
 
                 <tr>
-                    <td><button class="btn" onclick="insert('%')">%</button></td>
-                    <td><button class="btn" onclick="insert('/')">/</button></td>
-                    <td><button class="btn" onclick="insert('*')">*</button></td>
+                    <td><button class="btn btnElement" onclick="insert('%')">%</button></td>
+                    <td><button class="btn btnElement" onclick="insert('/')">/</button></td>
+                    <td><button class="btn btnElement" onclick="insert('*')">*</button></td>
                     <td><button class="btn" onclick="cleaner()">C</button></td>
                 </tr>
                 <tr>
                     <td><button class="btn" onclick="insert('7')">7</button></td>
                     <td><button class="btn" onclick="insert('8')">8</button></td>
                     <td><button class="btn" onclick="insert('9')">9</button></td>
-                    <td><button class="btn" onclick="insert('-')">-</button></td>
+                    <td><button class="btn btnElement" onclick="insert('-')">-</button></td>
                 </tr>
 
                 <tr>
                     <td><button class="btn" onclick="insert('4')">4</button></td>
                     <td><button class="btn" onclick="insert('5')">5</button></td>
                     <td><button class="btn" onclick="insert('6')">6</button></td>
-                    <td><button class="btn" onclick="insert('+')">+</button></td>
+                    <td><button class="btn btnElement" onclick="insert('+')">+</button></td>
                 </tr>
                 <tr>
                     <td><button class="btn" onclick="insert('1')">1</button></td>

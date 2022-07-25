@@ -9,8 +9,38 @@
   height: 100vh;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.671), --background-blue);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.671), #1de4e4);
+  color: var(--color-white);
+}
+.historic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+.historic h1 {
+  padding: 50px 30px 5px 30px;
+}
+
+#btnClear {
+  display: flex;
+  padding: 10px 30px;
+  margin: 0 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+#btnClear:hover {
   color: #fff;
+  background-color: var(--color-black);
+  transition: ease-in-out 0.3s;
+}
+
+.historic li {
+  padding: 0 30px;
+  list-style: none;
 }
 
 .calculadora {
